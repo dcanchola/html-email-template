@@ -19,7 +19,7 @@
 
       body {
         background-color: #f6f6f6;
-        font-family: sans-serif;
+        font-family: 'Arial', sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
         line-height: 1.4;
@@ -35,7 +35,7 @@
         mso-table-rspace: 0pt;
         width: 100%; }
         table td {
-          font-family: sans-serif;
+          font-family: 'Arial', sans-serif;
           font-size: 14px;
           vertical-align: top; 
       }
@@ -117,24 +117,33 @@
       h3,
       h4 {
         color: #000000;
-        font-family: sans-serif;
+        font-family: 'Arial', sans-serif;
         font-weight: 400;
         line-height: 1.4;
         margin: 0;
-        margin-bottom: 30px; 
       }
 
       h1 {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 300;
         text-align: center;
         text-transform: capitalize; 
       }
+	  h2 {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; 
+      }
+		
+		h2 span {
+			font-size:20px !important;
+		}
 
       p,
       ul,
       ol {
-        font-family: sans-serif;
+        font-family: 'Arial', sans-serif;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
@@ -255,22 +264,19 @@
         border-bottom: 1px solid #f6f6f6;
         margin: 20px 0; 
       }
+	  .mobile-show {
+	    display:none !important;
+	  }
+	  .mobile-hide {
+		   display:block !important;
+	    }
 
       /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
-      @media only screen and (max-width: 620px) {
+      @media only screen and (max-width: 580px) {
         table.body h1 {
-          font-size: 28px !important;
-          margin-bottom: 10px !important; 
-        }
-        table.body p,
-        table.body ul,
-        table.body ol,
-        table.body td,
-        table.body span,
-        table.body a {
-          font-size: 16px !important; 
+          font-size: 24px !important;
         }
         table.body .wrapper,
         table.body .article {
@@ -299,6 +305,22 @@
           max-width: 100% !important;
           width: auto !important; 
         }
+		th.stack {
+		   display:block;
+		   width:100% !important;
+		}
+		th.stack.nav {
+		   margin-bottom:5px !important;
+		}
+	    .mobile-show {
+		   display:block !important;
+	    }
+		.mobile-hide {
+		   display:none !important;
+	    }
+		.mb-pd {
+		   padding:0px 15px;
+	    }
       }
 
       /* -------------------------------------
@@ -376,21 +398,21 @@
 				  </table>
 				  <table cellpadding="0" cellspacing="0">
 				  	<tr> 
-                      <td width="20%" align="center" style="width:20%;">
+                      <th class="stack nav" width="20%" align="center" style="width:20%;">
                         <a href="#" style="color:black;text-decoration:none;">MAKEUP</a>
-                      </td>
-					  <td width="20%" align="center" style="width:20%;">
+                      </th>
+					  <th class="stack nav" width="20%" align="center" style="width:20%;">
 						<a href="#" style="color:black;text-decoration:none;">SKINCARE</a>
-                      </td>
-					  <td width="20%" align="center" style="width:20%;">
+                      </th>
+					  <th class="stack nav" width="20%" align="center" style="width:20%;">
 						<a href="#" style="color:black;text-decoration:none;">HAIR</a>
-                      </td>
-					  <td width="20%" align="center" style="width:20%;">
+                      </th>
+					  <th class="stack nav" width="20%" align="center" style="width:20%;">
 						<a href="#" style="color:black;text-decoration:none;">FRAGRANCE</a>
-                      </td>
-					  <td width="20%" align="center" style="width:20%;">
+                      </th>
+					  <th class="stack nav" width="20%" align="center" style="width:20%;">
 						<a href="#" style="color:black;text-decoration:none;">JEWELERY</a>
-                      </td>
+                      </th>
                     </tr>
 					<tr>
                       <td align="center" height="10" style="height:10px;font-size:10px;">
@@ -406,7 +428,7 @@
                     </tr>
                       <tr>
 						 <td align="center" style="font-size:24px;">
-						   THIS WEEKEND ONLY...
+						   <h1>THIS WEEKEND ONLY...</h1>
 						 </td>
 					  </tr>
 					  <tr>
@@ -424,7 +446,7 @@
 				  </table>
                   <table cellpadding="0" cellspacing="0" style="background:#f1e5d5;">
 					<tr>
-                      <td align="center" height="15">
+                      <td class="mobile-hide" align="center" height="15">
                        &nbsp; 
                       </td>
                     </tr>  
@@ -434,17 +456,17 @@
                       </td>
                     </tr>
 					 <tr>
-                      <td align="center" height="15" style="height:15px;">
+                      <td class="mobile-hide" align="center" height="15" style="height:15px;">
                        &nbsp; 
                       </td>
                     </tr>
 					<tr>
-                      <td align="center">
-                        <p style="font-size:20px;font-family:Helvetica, Arial, sans-serif;max-width:430px;margin:10px 0;">ALL <span style="font-weight:700;color:#80a7b5;">HAIR &amp; SKINCARE</span> ORDERS OVER $75**</p>
+                      <td class="mb-pd" align="center">
+                        <h2 style="font-size:20px;font-family:Arial, sans-serif;max-width:430px;margin:10px 0;">ALL <span style="font-weight:700;color:#80a7b5;">HAIR &amp; SKINCARE</span> <span class="mobile-show" style="line-height:0;"><br></span>ORDERS OVER $75**</h2>
                       </td>
                     </tr>
 					<tr>
-                      <td align="center" width="400" style="width:400px;">
+                      <td class="mb-pd" align="center" width="400" style="width:400px;">
                         <p style="font-size:10px;font-family:Helvetica, Arial, sans-serif;text-align:left;max-width:430px;">**Offer includes all full-priced hair and skincare products. Purchase total must be $75 or greater. Use code SURPSALE during checkout to activate offer. Offer valid through 5/5/2022.</p>
                       </td>
                     </tr>
@@ -464,7 +486,7 @@
                     </tr>
                     <tr> 
                       <td align="center" style="font-size:24px;">
-                        GET THEM BEFORE THEY'RE GONE
+                        <h1>GET THEM BEFORE<span class="mobile-show" style="line-height:0;"><br></span>THEY'RE GONE</h1>
 					  </td>
                     </tr>
 					<tr>
@@ -481,9 +503,9 @@
                     </tr> 
 					<tr> 
 						<td>
-						  <table cellpadding="0" cellspacing="0">
+						  <table align="center" cellpadding="0" cellspacing="0">
 							  <tr>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -499,7 +521,7 @@
 										</tr>
 									</table>
 								</th>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -515,7 +537,7 @@
 										</tr>
 									</table>
 								</th>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -544,7 +566,7 @@
 							  </th>
 							</tr>
 							  <tr>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -560,7 +582,7 @@
 										</tr>
 									</table>
 								</th>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -576,7 +598,7 @@
 										</tr>
 									</table>
 								</th>
-								<th align="center" width="33%" style="width:33%;">
+								<th class="stack" align="center" width="33%" style="width:33%;">
 									<table cellpadding="0" cellspacing="0">
 									  <tr>
 										<th align="center" width="33%" style="width:33%;">
@@ -640,11 +662,11 @@
                     </tr>
 				    <tr>
                       <td align="center">
-                        <p style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-align:center;color:#fff;">DISCOVER MORE BEAUTY SAVINGS THROUGH THE W&amp;S COLLECTIVE.</p>
+                        <h1 style="font-size:24px;text-align:center;color:#fff;">DISCOVER MORE BEAUTY SAVINGS THROUGH THE W&amp;S COLLECTIVE.</h1>
                       </td>
                     </tr>
 					<tr>
-                      <td align="center" height="5" style="height:5px;font-size:5px;">
+                      <td align="center" height="5" style="height:5px;font-size:10px;">
                        &nbsp; 
                       </td>
                     </tr>
